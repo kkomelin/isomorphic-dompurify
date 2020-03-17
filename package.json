@@ -1,0 +1,17 @@
+{
+  "name": "isomorphic-dompurify",
+  "version": "0.1.0",
+  "description": "Makes it possible to use DOMPurify library on server and client in the same way.",
+  "files": [
+    "index.js",
+    "browser.js"
+  ],
+  "license": "MIT",
+  "repository": "kkomelin/isomorphic-dompurify",
+  "browser": "browser.js",
+  "main": "index.js",
+  "dependencies": {
+    "dompurify": "^2.0.8",
+    "jsdom": "^16.2.1"
+  }
+}
