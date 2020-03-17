@@ -5,5 +5,5 @@ module.exports = global.DOMPurify = global.DOMPurify || (
     const { JSDOM } = r(require('jsdom'));
     const { window } = new JSDOM('<!DOCTYPE html>');
     return DOMPurifyInitializer(window);
-	})
+	})()
 );
