@@ -28,10 +28,10 @@ $ npm i isomorphic-dompurify
 
 ```javascript
 // Import as an ES6 module.
-import DOMPurify from 'isomorphic-dompurify'
+import DOMPurify from 'isomorphic-dompurify';
 
 // Or as a CommonJS module.
-const DOMPurify = require('isomorphic-dompurify')
+const DOMPurify = require('isomorphic-dompurify');
 ```
 
 2. Sanitize a string:
