@@ -55,4 +55,4 @@ DOMPurify -
 [Apache 2.0 or MPL 2.0](https://github.com/cure53/DOMPurify/blob/master/LICENSE)
 © 2015 Mario Heiderich
 
-Isomorphic DOMPurify - [MIT License](LICENSE.md) © 2020 [Konstantin Komelin](https://github.com/kkomelin)
+Isomorphic DOMPurify - [MIT License](LICENSE) © 2020 [Konstantin Komelin](https://github.com/kkomelin)
