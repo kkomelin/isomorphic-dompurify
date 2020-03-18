@@ -40,6 +40,15 @@ const DOMPurify = require('isomorphic-dompurify');
 var clean = DOMPurify.sanitize(dirty);
 ```
 
+## Supported Environments
+
+The library is aimed to work **everywhere** and has been tested (manually) in the following environments:
+- Node.js, CommonJS
+- Node.js, Webpack, ES6
+- React.js without SSR
+- Next.js without SSR
+- Next.js with SSR
+
 ## License
 
 DOMPurify -
