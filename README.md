@@ -1,4 +1,5 @@
 # Isomorphic DOMPurify
+[![npm version](https://badge.fury.io/js/isomorphic-dompurify.svg)](https://badge.fury.io/js/isomorphic-dompurify)
 
 The library makes it possible to seamlessly use [DOMPurify](https://github.com/cure53/DOMPurify) on server and client in the same way.
 It does nothing by itself except providing an isomorthic/universal wrapper around DOMPurify, so all credits go to DOMPurify authors and contributors.

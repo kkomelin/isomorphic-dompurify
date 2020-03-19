@@ -2,6 +2,16 @@
   "name": "isomorphic-dompurify",
   "version": "0.1.0",
   "description": "Makes it possible to use DOMPurify on server and client in the same way.",
+  "keywords": [
+    "dompurify",
+    "xss-filter",
+    "xss",
+    "isomorphic",
+    "wrapper"
+  ],
+  "bugs": {
+    "url": "https://github.com/kkomelin/isomorphic-dompurify/issues"
+  },
   "files": [
     "index.js",
     "browser.js"
