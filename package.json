@@ -14,6 +14,7 @@
   },
   "files": [
     "index.js",
+    "index.d.ts",
     "browser.js"
   ],
   "license": "MIT",
@@ -21,7 +22,9 @@
   "browser": "browser.js",
   "main": "index.js",
   "dependencies": {
+    "@types/dompurify": "^2.0.1",
     "dompurify": "^2.0.8",
     "jsdom": "^16.2.1"
-  }
+  },
+  "types": "index.d.ts"
 }
