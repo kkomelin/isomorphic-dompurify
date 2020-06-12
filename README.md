@@ -1,5 +1,6 @@
 # Isomorphic DOMPurify
 [![npm version](https://badge.fury.io/js/isomorphic-dompurify.svg)](https://badge.fury.io/js/isomorphic-dompurify)
+[![Build Status](https://travis-ci.com/kkomelin/isomorphic-dompurify.svg?branch=master)](https://travis-ci.com/kkomelin/isomorphic-dompurify)
 
 The library makes it possible to seamlessly use [DOMPurify](https://github.com/cure53/DOMPurify) on server and client in the same way.
 It does nothing by itself except providing an isomorthic/universal wrapper around DOMPurify, so all credits go to DOMPurify authors and contributors.
@@ -56,4 +57,4 @@ DOMPurify -
 [Apache 2.0 or MPL 2.0](https://github.com/cure53/DOMPurify/blob/master/LICENSE)
 © 2015 Mario Heiderich
 
-Isomorphic DOMPurify - [MIT License](LICENSE) © 2020 [Konstantin Komelin](https://github.com/kkomelin)
+Isomorphic DOMPurify - [MIT License](LICENSE) © 2020 [Konstantin Komelin](https://github.com/kkomelin) and [contributors](https://github.com/kkomelin/isomorphic-dompurify/graphs/contributors)
