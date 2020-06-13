@@ -44,12 +44,12 @@ var clean = DOMPurify.sanitize(dirty);
 
 ## Supported Environments
 
-The library is aimed to work **everywhere** and has been tested (manually) in the following environments:
-- Node.js, CommonJS
-- Node.js, Webpack, ES6
-- React.js without SSR
-- Next.js without SSR
-- Next.js with SSR
+The library is aimed to work **everywhere** and has been tested in the following environments:
+- Node.js, CommonJS ([automatically](https://travis-ci.org/kkomelin/isomorphic-dompurify) & manually)
+- Node.js, Webpack, ES6 (manually)
+- React.js without SSR (manually)
+- Next.js without SSR (manually)
+- Next.js with SSR (manually)
 
 ## License
 
