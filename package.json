@@ -26,11 +26,11 @@
   "main": "index.js",
   "dependencies": {
     "@types/dompurify": "^2.0.2",
-    "dompurify": "^2.0.11",
+    "dompurify": "^2.0.12",
     "jsdom": "^16.2.1"
   },
   "types": "index.d.ts",
   "devDependencies": {
-    "jest": "^26.0.1"
+    "jest": "^26.1.0"
   }
 }
