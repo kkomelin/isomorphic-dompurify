@@ -24,6 +24,10 @@ It was inspired by [Isomorphic Unfetch](https://github.com/developit/unfetch/tre
 $ npm i isomorphic-dompurify
 ```
 
+## Updates
+
+Please note that DOMPurify library [doesn't follow Semantic Versioning](https://github.com/cure53/DOMPurify/issues/446#issuecomment-643761433), so we have to release every change as minor version because we cannot be 100% sure whether new features are added to patch DOMPurify releases or not.
+
 ## Usage
 
 1. Import the library:
