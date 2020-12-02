@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-dompurify",
-  "version": "0.9.2",
+  "version": "0.9.3",
   "description": "Makes it possible to use DOMPurify on server and client in the same way.",
   "keywords": [
     "dompurify",
