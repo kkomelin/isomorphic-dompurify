@@ -1,9 +1,17 @@
-function r(m){return m && m.default || m;}
-module.exports = global.DOMPurify = global.DOMPurify || (
-	typeof process === 'undefined' ? r(require('dompurify')) : (function() {
-    const DOMPurifyInitializer = r(require('dompurify'));
-    const { JSDOM } = r(require('jsdom'));
-    const { window } = new JSDOM('<!DOCTYPE html>');
-    return DOMPurifyInitializer(window);
-	})()
-);
+function importModule(requiredModule){
+    return requiredModule && requiredModule.default || requiredModule;
+}
+
+function initDOMPurifyWithJSDOM() {
+  const DOMPurifyInitializer = importModule(require('dompurify'));
+  const { JSDOM } = importModule(require('jsdom'));
+  const { window } = new JSDOM('<!DOCTYPE html>');
+  return DOMPurifyInitializer(window)
+}
+
+function resolveDOMPurify(){
+  const isClientSide = typeof process === 'undefined';
+  isClientSide ? importModule(require('dompurify')) : initDOMPurifyWithJSDOM();
+}
+
+module.exports = global.DOMPurify = global.DOMPurify || resolveDOMPurify()
