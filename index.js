@@ -1,17 +1,1 @@
-function importModule(requiredModule) {
-    return requiredModule && requiredModule.default || requiredModule;
-}
-
-function initDOMPurifyWithJSDOM() {
-  const DOMPurifyInitializer = importModule(require('dompurify'));
-  const { JSDOM } = importModule(require('jsdom'));
-  const { window } = new JSDOM('<!DOCTYPE html>');
-  return DOMPurifyInitializer(window);
-}
-
-function resolveDOMPurify() {
-  const isClientSide = typeof process === 'undefined';
-  return isClientSide ? importModule(require('dompurify')) : initDOMPurifyWithJSDOM();
-}
-
-module.exports = global.DOMPurify = global.DOMPurify || resolveDOMPurify();
+function e(e){return e&&e.default||e}module.exports=global.DOMPurify=global.DOMPurify||("undefined"==typeof process?e(require("dompurify")):function(){const r=e(require("dompurify")),{JSDOM:u}=e(require("jsdom")),{window:o}=new u("<!DOCTYPE html>");return r(o)}());
