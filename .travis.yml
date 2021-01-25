@@ -1,4 +1,5 @@
-sudo: false
+os: linux
+dist: focal
 language: node_js
 node_js:
   - 14
