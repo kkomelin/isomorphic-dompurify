@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-dompurify",
-  "version": "0.11.0",
+  "version": "0.12.0",
   "description": "Makes it possible to use DOMPurify on server and client in the same way.",
   "keywords": [
     "dompurify",
@@ -13,7 +13,8 @@
     "html-escape"
   ],
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "terser src/index.js --compress --mangle --module -o index.js"
   },
   "bugs": {
     "url": "https://github.com/kkomelin/isomorphic-dompurify/issues"
@@ -34,6 +35,7 @@
   },
   "types": "index.d.ts",
   "devDependencies": {
-    "jest": "^26.6.3"
+    "jest": "^26.6.3",
+    "terser": "^5.5.1"
   }
 }
