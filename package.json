@@ -35,7 +35,7 @@
   },
   "types": "index.d.ts",
   "devDependencies": {
-    "jest": "^26.6.3",
+    "jest": "^27.0.1",
     "terser": "^5.6.1"
   }
 }
