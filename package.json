@@ -31,7 +31,7 @@
   "dependencies": {
     "@types/dompurify": "^2.2.3",
     "dompurify": "^2.3.0",
-    "jsdom": "^16.6.0"
+    "jsdom": "^17.0.0"
   },
   "types": "index.d.ts",
   "devDependencies": {
