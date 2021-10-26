@@ -1,6 +1,6 @@
 # Isomorphic DOMPurify
 [![npm version](https://badge.fury.io/js/isomorphic-dompurify.svg)](https://badge.fury.io/js/isomorphic-dompurify)
-[![Build Status](https://travis-ci.com/kkomelin/isomorphic-dompurify.svg?branch=master)](https://travis-ci.com/kkomelin/isomorphic-dompurify)
+[![Build Status](https://app.travis-ci.com/kkomelin/isomorphic-dompurify.svg?branch=master)](https://app.travis-ci.com/kkomelin/isomorphic-dompurify)
 [![Bundlephobia Minified Size](https://badgen.net/bundlephobia/min/isomorphic-dompurify)](https://bundlephobia.com/result?p=isomorphic-dompurify)
 
 The library makes it possible to seamlessly use [DOMPurify](https://github.com/cure53/DOMPurify) on server and client in the same way.
@@ -27,7 +27,7 @@ $ npm i isomorphic-dompurify
 
 ## Updates
 
-Please note that DOMPurify library [doesn't follow Semantic Versioning](https://github.com/cure53/DOMPurify/issues/446#issuecomment-643761433), so we have to release every change as minor version because we cannot be 100% sure whether new features are added to patch DOMPurify releases or not.
+Please note that DOMPurify library [doesn't follow Semantic Versioning](https://github.com/cure53/DOMPurify/issues/446#issuecomment-643761433), so we have to release every change as a minor version because we cannot be 100% sure whether new features are added to patch DOMPurify releases or not.
 
 ## Usage
 
@@ -50,7 +50,7 @@ var clean = DOMPurify.sanitize(dirty);
 ## Supported Environments
 
 The library is aimed to work **everywhere** and has been tested in the following environments:
-- Node.js, CommonJS ([automatically](https://travis-ci.org/kkomelin/isomorphic-dompurify) & manually)
+- Node.js, CommonJS ([automatically](https://app.travis-ci.com/kkomelin/isomorphic-dompurify) & manually)
 - Node.js, Webpack, ES6 (manually)
 - React.js without SSR (manually)
 - Next.js without SSR (manually)
