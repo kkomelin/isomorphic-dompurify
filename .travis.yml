@@ -3,12 +3,10 @@ dist: focal
 language: node_js
 node_js:
   - 14
-cache:
-  directories:
-  - node_modules
+cache: yarn
 before_install:
-- npm update
+- yarn update
 install:
-- npm install
+- yarn install --frozen-lockfile
 script:
-- npm test
+- yarn test
