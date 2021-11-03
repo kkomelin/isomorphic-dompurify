@@ -56,6 +56,11 @@ The library is aimed to work **everywhere** and has been tested in the following
 - Next.js without SSR (manually)
 - Next.js with SSR (manually)
 
+## Known Issues
+
+1. [Can't resolve 'canvas' on Next.js serverless app](https://github.com/kkomelin/isomorphic-dompurify/issues/54) 
+2. [Starting from 0.16.0, there is a dependency conflict which causes `ReferenceError: TextEncoder is not defined`](https://github.com/kkomelin/isomorphic-dompurify/issues/91)
+
 ## License
 
 DOMPurify -
