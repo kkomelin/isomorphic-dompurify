@@ -47,15 +47,6 @@ const DOMPurify = require('isomorphic-dompurify');
 var clean = DOMPurify.sanitize(dirty);
 ```
 
-## Supported Environments
-
-The library is aimed to work **everywhere** and has been tested in the following environments:
-- Node.js, CommonJS ([automatically](https://app.travis-ci.com/kkomelin/isomorphic-dompurify) & manually)
-- Node.js, Webpack, ES6 (manually)
-- React.js without SSR (manually)
-- Next.js without SSR (manually)
-- Next.js with SSR (manually)
-
 ## Known Issues
 
 1. [Can't resolve 'canvas' on Next.js serverless app](https://github.com/kkomelin/isomorphic-dompurify/issues/54) 
