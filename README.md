@@ -18,6 +18,12 @@ This project was born with the idea of encapsulating DOMPurify initilization det
 
 It was inspired by [Isomorphic Unfetch](https://github.com/developit/unfetch/tree/master/packages/isomorphic-unfetch).
 
+## Requirements
+
+| isomorphic-dompurify  | Node.js |
+| ------------- | ------------- |
+| `<=0.19.0`  | `>=12`  |
+| `>=0.20.0`  | `>=14`  |
 
 ## Installation
 
