@@ -20,10 +20,10 @@ It was inspired by [Isomorphic Unfetch](https://github.com/developit/unfetch/tre
 
 ## Requirements
 
-| isomorphic-dompurify  | Node.js |
-| ------------- | ------------- |
-| `<=0.19.0`  | `>=12`  |
-| `>=0.20.0`  | `>=14`  |
+| isomorphic-dompurify  | Node.js | Environment |
+| ------------- | ------------- | ------------- |
+| `<=0.19.0`  | `>=12`  | Server  |
+| `>=0.20.0`  | `>=14`  | Server  |
 
 ## Installation
 
