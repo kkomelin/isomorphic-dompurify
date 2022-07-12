@@ -50,7 +50,7 @@ const DOMPurify = require('isomorphic-dompurify');
 2. Sanitize a string:
 
 ```javascript
-var clean = DOMPurify.sanitize(dirty);
+const clean = DOMPurify.sanitize(dirty);
 ```
 
 ## Known Issues
