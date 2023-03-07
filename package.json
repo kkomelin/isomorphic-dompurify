@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-dompurify",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Makes it possible to use DOMPurify on server and client in the same way.",
   "keywords": [
     "security",
@@ -29,14 +29,14 @@
   "repository": "kkomelin/isomorphic-dompurify",
   "browser": "browser.js",
   "main": "index.js",
+  "types": "index.d.ts",
   "dependencies": {
     "@types/dompurify": "^2.4.0",
-    "dompurify": "^3.0.0",
+    "dompurify": "^3.0.1",
     "jsdom": "^21.1.0"
   },
-  "types": "index.d.ts",
   "devDependencies": {
-    "jest": "^29.4.2",
-    "terser": "^5.16.3"
+    "jest": "^29.5.0",
+    "terser": "^5.16.5"
   }
 }
