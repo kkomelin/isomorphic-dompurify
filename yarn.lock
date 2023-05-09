@@ -2258,9 +2258,9 @@ symbol-tree@^3.2.4:
   integrity sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==
 
 terser@^5.16.9:
-  version "5.17.1"
-  resolved "https://registry.yarnpkg.com/terser/-/terser-5.17.1.tgz#948f10830454761e2eeedc6debe45c532c83fd69"
-  integrity sha512-hVl35zClmpisy6oaoKALOpS0rDYLxRFLHhRuDlEGTKey9qHjS1w9GMORjuwIMt70Wan4lwsLYyWDVnWgF+KUEw==
+  version "5.17.2"
+  resolved "https://registry.yarnpkg.com/terser/-/terser-5.17.2.tgz#06c9818ae998066234b985abeb57bb7bff29d449"
+  integrity sha512-1D1aGbOF1Mnayq5PvfMc0amAR1y5Z1nrZaGCvI5xsdEfZEVte8okonk02OiaK5fw5hG1GWuuVsakOnpZW8y25A==
   dependencies:
     "@jridgewell/source-map" "^0.3.2"
     acorn "^8.5.0"
