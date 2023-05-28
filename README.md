@@ -40,7 +40,7 @@ Please note that DOMPurify library [doesn't follow Semantic Versioning](https://
 1. Import the library:
 
 ```javascript
-// Import separate function in the ES6 way (recommended):
+// Import a necessary function in the ES6 way (recommended):
 import { sanitize, isSupported } from "isomorphic-dompurify";
 
 // or the entire module:
