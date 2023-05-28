@@ -40,15 +40,13 @@ Please note that DOMPurify library [doesn't follow Semantic Versioning](https://
 1. Import the library:
 
 ```javascript
-// Import as an ES6 module.
-
+// Import separate function in the ES6 way (recommended):
 import { sanitize, isSupported } from "isomorphic-dompurify";
 
-// Or
-
+// or the entire module:
 import DOMPurify from 'isomorphic-dompurify';
 
-// Or as a CommonJS module.
+// or as a CommonJS module:
 const DOMPurify = require('isomorphic-dompurify');
 ```
 
