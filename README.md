@@ -41,6 +41,11 @@ Please note that DOMPurify library [doesn't follow Semantic Versioning](https://
 
 ```javascript
 // Import as an ES6 module.
+
+import { sanitize, isSupported } from "isomorphic-dompurify";
+
+// Or
+
 import DOMPurify from 'isomorphic-dompurify';
 
 // Or as a CommonJS module.
