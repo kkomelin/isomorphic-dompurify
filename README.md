@@ -40,12 +40,10 @@ Please note that DOMPurify library [doesn't follow Semantic Versioning](https://
 ## Usage
 
 ```javascript
-// Import:
 import { sanitize } from "isomorphic-dompurify";
 ```
 
 ```javascript
-// Sanitize:
 const clean = sanitize(dirtyString);
 ```
 
