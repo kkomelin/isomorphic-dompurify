@@ -10,7 +10,7 @@ function initDOMPurifyWithJSDOM() {
 }
 
 function resolveDOMPurify() {
-  const isClientSide = typeof process === 'undefined';
+  const isClientSide = typeof window !== 'undefined';
   return isClientSide ? importModule(require('dompurify')) : initDOMPurifyWithJSDOM();
 }
 
