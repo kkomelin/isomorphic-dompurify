@@ -55,7 +55,7 @@ const clean = sanitize(dirtyString, { USE_PROFILES: { html: true } });
 
 ## Known Issues
 
-1. Next.js and Remix are mistakenly trying to use the `browser` entry point on server, which causes the `Window is undefined` issue. #228 #214 https://github.com/vercel/next.js/discussions/58142
+1. Next.js and Remix are mistakenly trying to use the `browser` entry point on server, which causes the `Window is undefined` issue. [#228](https://github.com/kkomelin/isomorphic-dompurify/issues/228) [#214](https://github.com/kkomelin/isomorphic-dompurify/issues/214) https://github.com/vercel/next.js/discussions/58142
 2. [Can't resolve 'canvas' on Next.js serverless app](https://github.com/kkomelin/isomorphic-dompurify/issues/54) 
 3. [Starting from 0.16.0, there is a dependency conflict which causes `ReferenceError: TextEncoder is not defined`](https://github.com/kkomelin/isomorphic-dompurify/issues/91)
 
