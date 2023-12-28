@@ -1,1 +1,1 @@
-module.exports = window.DOMPurify || (window.DOMPurify = require('dompurify').default || require('dompurify'));
+module.exports = self.DOMPurify || (self.DOMPurify = require('dompurify').default || require('dompurify'));
