@@ -41,16 +41,17 @@ Please note that DOMPurify library [doesn't follow Semantic Versioning](https://
 
 Import:
 ```javascript
-import { sanitize } from "isomorphic-dompurify";
+import DOMPurify from "isomorphic-dompurify";
 ```
+_Importing the entire module for the client/browser version is recommended._
 
 Sanitize:
 ```javascript
-const clean = sanitize(dirtyString);
+const clean = DOMPurify.sanitize(dirtyString);
 ```
 or with [config](https://github.com/cure53/DOMPurify/blob/main/README.md):
 ```javascript
-const clean = sanitize(dirtyString, { USE_PROFILES: { html: true } });
+const clean = DOMPurify.sanitize(dirtyString, { USE_PROFILES: { html: true } });
 ```
 
 ## Known Issues
