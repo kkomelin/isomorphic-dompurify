@@ -33,7 +33,7 @@
   "dependencies": {
     "@types/dompurify": "^3.0.5",
     "dompurify": "^3.0.8",
-    "jsdom": "^23.1.0"
+    "jsdom": "^24.0.0"
   },
   "devDependencies": {
     "jest": "^29.7.0",
