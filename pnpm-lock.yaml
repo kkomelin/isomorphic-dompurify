@@ -10,7 +10,7 @@ dependencies:
     version: 3.0.5
   dompurify:
     specifier: ^3.1.4
-    version: 3.1.4
+    version: 3.1.5
   jsdom:
     specifier: ^24.0.0
     version: 24.1.0
@@ -1094,8 +1094,8 @@ packages:
     engines: {node: ^14.15.0 || ^16.10.0 || >=18.0.0}
     dev: true
 
-  /dompurify@3.1.4:
-    resolution: {integrity: sha512-2gnshi6OshmuKil8rMZuQCGiUF3cUxHY3NGDzUAdUx/NPEe5DVnO8BDoAQouvgwnx0R/+a6jUn36Z0FSdq8vww==}
+  /dompurify@3.1.5:
+    resolution: {integrity: sha512-lwG+n5h8QNpxtyrJW/gJWckL+1/DQiYMX8f7t8Z2AZTPw1esVrqjI63i7Zc2Gz0aKzLVMYC1V1PL/ky+aY/NgA==}
     dev: false
 
   /electron-to-chromium@1.4.783:
