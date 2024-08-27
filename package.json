@@ -17,7 +17,7 @@
     "sanitizer"
   ],
   "scripts": {
-    "test": "jest",
+    "test": "vitest",
     "build": "terser src/index.js --compress --mangle --module -o index.js"
   },
   "bugs": {
@@ -39,8 +39,8 @@
     "jsdom": "^24.1.1"
   },
   "devDependencies": {
-    "jest": "^29.7.0",
-    "terser": "^5.31.3"
+    "terser": "^5.31.3",
+    "vitest": "^2.0.5"
   },
   "engines": {
     "node": ">=18"
