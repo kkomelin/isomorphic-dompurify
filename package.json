@@ -39,7 +39,7 @@
   },
   "devDependencies": {
     "terser": "^5.36.0",
-    "vitest": "^2.1.5"
+    "vitest": "^2.1.6"
   },
   "engines": {
     "node": ">=18"
