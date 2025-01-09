@@ -35,7 +35,7 @@
   "types": "index.d.ts",
   "dependencies": {
     "dompurify": "^3.2.3",
-    "jsdom": "^25.0.1"
+    "jsdom": "^26.0.0"
   },
   "devDependencies": {
     "terser": "^5.37.0",
