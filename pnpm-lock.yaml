@@ -17,10 +17,10 @@ importers:
     devDependencies:
       terser:
         specifier: ^5.37.0
-        version: 5.37.0
+        version: 5.38.0
       vitest:
         specifier: ^3.0.1
-        version: 3.0.5(@types/node@22.7.4)(jsdom@26.0.0)(terser@5.37.0)
+        version: 3.0.5(@types/node@22.7.4)(jsdom@26.0.0)(terser@5.38.0)
 
 packages:
 
@@ -205,8 +205,8 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@jridgewell/gen-mapping@0.3.5':
-    resolution: {integrity: sha512-IzL8ZoEDIBRWEzlCcRhOaCupYyN5gdIK+Q6fbFdPDg6HqX6jpkItn7DFIpW9LQzXG6Df9sA7+OKnq0qlz/GaQg==}
+  '@jridgewell/gen-mapping@0.3.8':
+    resolution: {integrity: sha512-imAbBGkb+ebQyxKgzv5Hu2nmROxoDOXHh80evxdoXNOrvAnVx7zimzc1Oo5h9RlfV4vPXaE2iM5pOFbvOCClWA==}
     engines: {node: '>=6.0.0'}
 
   '@jridgewell/resolve-uri@3.1.2':
@@ -572,8 +572,8 @@ packages:
   symbol-tree@3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
 
-  terser@5.37.0:
-    resolution: {integrity: sha512-B8wRRkmre4ERucLM/uXx4MOV5cbnOlVAqUst+1+iLKPI0dOgFO28f84ptoQt9HEI537PMzfYa/d+GEPKTRXmYA==}
+  terser@5.38.0:
+    resolution: {integrity: sha512-a4GD5R1TjEeuCT6ZRiYMHmIf7okbCPEuhQET8bczV6FrQMMlFXA1n+G0KKjdlFCm3TEHV77GxfZB3vZSUQGFpg==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -835,7 +835,7 @@ snapshots:
   '@esbuild/win32-x64@0.24.2':
     optional: true
 
-  '@jridgewell/gen-mapping@0.3.5':
+  '@jridgewell/gen-mapping@0.3.8':
     dependencies:
       '@jridgewell/set-array': 1.2.1
       '@jridgewell/sourcemap-codec': 1.5.0
@@ -847,7 +847,7 @@ snapshots:
 
   '@jridgewell/source-map@0.3.6':
     dependencies:
-      '@jridgewell/gen-mapping': 0.3.5
+      '@jridgewell/gen-mapping': 0.3.8
       '@jridgewell/trace-mapping': 0.3.25
 
   '@jridgewell/sourcemap-codec@1.5.0': {}
@@ -931,13 +931,13 @@ snapshots:
       chai: 5.1.2
       tinyrainbow: 2.0.0
 
-  '@vitest/mocker@3.0.5(vite@6.0.11(@types/node@22.7.4)(terser@5.37.0))':
+  '@vitest/mocker@3.0.5(vite@6.0.11(@types/node@22.7.4)(terser@5.38.0))':
     dependencies:
       '@vitest/spy': 3.0.5
       estree-walker: 3.0.3
       magic-string: 0.30.17
     optionalDependencies:
-      vite: 6.0.11(@types/node@22.7.4)(terser@5.37.0)
+      vite: 6.0.11(@types/node@22.7.4)(terser@5.38.0)
 
   '@vitest/pretty-format@3.0.5':
     dependencies:
@@ -1203,7 +1203,7 @@ snapshots:
 
   symbol-tree@3.2.4: {}
 
-  terser@5.37.0:
+  terser@5.38.0:
     dependencies:
       '@jridgewell/source-map': 0.3.6
       acorn: 8.14.0
@@ -1237,13 +1237,13 @@ snapshots:
   undici-types@6.19.8:
     optional: true
 
-  vite-node@3.0.5(@types/node@22.7.4)(terser@5.37.0):
+  vite-node@3.0.5(@types/node@22.7.4)(terser@5.38.0):
     dependencies:
       cac: 6.7.14
       debug: 4.4.0
       es-module-lexer: 1.6.0
       pathe: 2.0.2
-      vite: 6.0.11(@types/node@22.7.4)(terser@5.37.0)
+      vite: 6.0.11(@types/node@22.7.4)(terser@5.38.0)
     transitivePeerDependencies:
       - '@types/node'
       - jiti
@@ -1258,7 +1258,7 @@ snapshots:
       - tsx
       - yaml
 
-  vite@6.0.11(@types/node@22.7.4)(terser@5.37.0):
+  vite@6.0.11(@types/node@22.7.4)(terser@5.38.0):
     dependencies:
       esbuild: 0.24.2
       postcss: 8.5.1
@@ -1266,12 +1266,12 @@ snapshots:
     optionalDependencies:
       '@types/node': 22.7.4
       fsevents: 2.3.3
-      terser: 5.37.0
+      terser: 5.38.0
 
-  vitest@3.0.5(@types/node@22.7.4)(jsdom@26.0.0)(terser@5.37.0):
+  vitest@3.0.5(@types/node@22.7.4)(jsdom@26.0.0)(terser@5.38.0):
     dependencies:
       '@vitest/expect': 3.0.5
-      '@vitest/mocker': 3.0.5(vite@6.0.11(@types/node@22.7.4)(terser@5.37.0))
+      '@vitest/mocker': 3.0.5(vite@6.0.11(@types/node@22.7.4)(terser@5.38.0))
       '@vitest/pretty-format': 3.0.5
       '@vitest/runner': 3.0.5
       '@vitest/snapshot': 3.0.5
@@ -1287,8 +1287,8 @@ snapshots:
       tinyexec: 0.3.2
       tinypool: 1.0.2
       tinyrainbow: 2.0.0
-      vite: 6.0.11(@types/node@22.7.4)(terser@5.37.0)
-      vite-node: 3.0.5(@types/node@22.7.4)(terser@5.37.0)
+      vite: 6.0.11(@types/node@22.7.4)(terser@5.38.0)
+      vite-node: 3.0.5(@types/node@22.7.4)(terser@5.38.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 22.7.4
