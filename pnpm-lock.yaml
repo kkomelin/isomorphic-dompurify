@@ -9,7 +9,7 @@ importers:
   .:
     dependencies:
       dompurify:
-        specifier: ^3.2.3
+        specifier: ^3.2.4
         version: 3.2.4
       jsdom:
         specifier: ^26.0.0
