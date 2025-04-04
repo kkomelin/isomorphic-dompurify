@@ -34,12 +34,12 @@
   "main": "index.js",
   "types": "index.d.ts",
   "dependencies": {
-    "dompurify": "^3.2.4",
+    "dompurify": "^3.2.5",
     "jsdom": "^26.0.0"
   },
   "devDependencies": {
     "terser": "^5.39.0",
-    "vitest": "^3.0.6"
+    "vitest": "^3.1.1"
   },
   "engines": {
     "node": ">=18"
