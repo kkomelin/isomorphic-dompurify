@@ -50,8 +50,8 @@
     "jsdom": "^26.1.0"
   },
   "devDependencies": {
-    "terser": "^5.39.2",
-    "vitest": "^3.1.4"
+    "terser": "^5.43.1",
+    "vitest": "^3.2.4"
   },
   "engines": {
     "node": ">=18"
