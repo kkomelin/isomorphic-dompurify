@@ -33,6 +33,18 @@
   "browser": "browser.js",
   "main": "index.js",
   "types": "index.d.ts",
+  "exports": {
+    "node": {
+      "types": "./index.d.ts",
+      "import": "./index.js",
+      "require": "./index.js"
+    },
+    "default": {
+      "types": "./index.d.ts",
+      "import": "./browser.js",
+      "require": "./browser.js"
+    }
+  },
   "dependencies": {
     "dompurify": "^3.2.6",
     "jsdom": "^26.1.0"
