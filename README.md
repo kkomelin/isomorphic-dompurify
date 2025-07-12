@@ -1,7 +1,6 @@
 # Isomorphic DOMPurify
 [![npm version](https://badge.fury.io/js/isomorphic-dompurify.svg)](https://badge.fury.io/js/isomorphic-dompurify)
 [![Test Status](https://github.com/kkomelin/isomorphic-dompurify/actions/workflows/build_test.yml/badge.svg)](https://github.com/kkomelin/isomorphic-dompurify/actions/workflows/build_test.yml)
-[![Bundlephobia Minified Size](https://badgen.net/bundlephobia/min/isomorphic-dompurify)](https://bundlephobia.com/result?p=isomorphic-dompurify)
 
 The library makes it possible to seamlessly use [DOMPurify](https://github.com/cure53/DOMPurify) on server and client in the same way.
 It does nothing by itself except providing an isomorphic/universal wrapper around DOMPurify, so all credits go to DOMPurify authors and contributors.
