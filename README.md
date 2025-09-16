@@ -25,6 +25,7 @@ It was inspired by [Isomorphic Unfetch](https://github.com/developit/unfetch/tre
 | `>=0.20.0`  | `>=14`  | Server  |
 | `>=1.4.0`  | `>=16`  | Server  |
 | `>=1.10.0`  | `>=18`  | Server  |
+| `>=2.27.0`  | `>=20`  | Server  |
 
 ## Installation
 
