@@ -46,7 +46,7 @@
     }
   },
   "dependencies": {
-    "dompurify": "^3.2.6",
+    "dompurify": "^3.2.7",
     "jsdom": "^27.0.0"
   },
   "devDependencies": {
