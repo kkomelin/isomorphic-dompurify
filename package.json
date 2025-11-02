@@ -47,11 +47,11 @@
   },
   "dependencies": {
     "dompurify": "^3.3.0",
-    "jsdom": "^27.0.1"
+    "jsdom": "^27.1.0"
   },
   "devDependencies": {
     "terser": "^5.44.0",
-    "vitest": "^4.0.1"
+    "vitest": "^4.0.6"
   },
   "engines": {
     "node": ">=20.19.5"
