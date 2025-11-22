@@ -58,7 +58,7 @@ const clean = DOMPurify.sanitize(dirtyString, { USE_PROFILES: { html: true } });
 ## Web Worker Support
 
 The `isomorphic-dompurify` library is [compatible with Web Workers](https://github.com/kkomelin/isomorphic-dompurify/pull/242), 
-however, `dompurify` [is not, at least not yet](https://github.com/cure53/DOMPurify/issues/577).
+however, `dompurify`, which it depends upon, [is not, at least not yet](https://github.com/cure53/DOMPurify/issues/577).
 
 ## License
 
