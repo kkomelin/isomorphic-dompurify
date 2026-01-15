@@ -17,10 +17,10 @@ importers:
     devDependencies:
       terser:
         specifier: ^5.44.1
-        version: 5.44.1
+        version: 5.46.0
       vitest:
         specifier: ^4.0.16
-        version: 4.0.17(jsdom@27.4.0)(terser@5.44.1)
+        version: 4.0.17(jsdom@27.4.0)(terser@5.46.0)
 
 packages:
 
@@ -606,8 +606,8 @@ packages:
   symbol-tree@3.2.4:
     resolution: {integrity: sha512-9QNk5KwDF+Bvz+PyObkmSYjI5ksVUYtjW7AU22r2NKcfLJcXp96hkDWU3+XndOsUb+AQ9QhfzfCT2O+CNWT5Tw==}
 
-  terser@5.44.1:
-    resolution: {integrity: sha512-t/R3R/n0MSwnnazuPpPNVO60LX0SKL45pyl9YlvxIdkH0Of7D5qM2EVe+yASRIlY5pZ73nclYJfNANGWPwFDZw==}
+  terser@5.46.0:
+    resolution: {integrity: sha512-jTwoImyr/QbOWFFso3YoU3ik0jBBDJ6JTOQiy/J2YxVJdZCc+5u7skhNwiOR3FQIygFqVUPHl7qbbxtjW2K3Qg==}
     engines: {node: '>=10'}
     hasBin: true
 
@@ -996,13 +996,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.0.3
 
-  '@vitest/mocker@4.0.17(vite@7.3.1(terser@5.44.1))':
+  '@vitest/mocker@4.0.17(vite@7.3.1(terser@5.46.0))':
     dependencies:
       '@vitest/spy': 4.0.17
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 7.3.1(terser@5.44.1)
+      vite: 7.3.1(terser@5.46.0)
 
   '@vitest/pretty-format@4.0.17':
     dependencies:
@@ -1250,7 +1250,7 @@ snapshots:
 
   symbol-tree@3.2.4: {}
 
-  terser@5.44.1:
+  terser@5.46.0:
     dependencies:
       '@jridgewell/source-map': 0.3.11
       acorn: 8.15.0
@@ -1282,7 +1282,7 @@ snapshots:
     dependencies:
       punycode: 2.3.1
 
-  vite@7.3.1(terser@5.44.1):
+  vite@7.3.1(terser@5.46.0):
     dependencies:
       esbuild: 0.27.2
       fdir: 6.5.0(picomatch@4.0.3)
@@ -1292,12 +1292,12 @@ snapshots:
       tinyglobby: 0.2.15
     optionalDependencies:
       fsevents: 2.3.3
-      terser: 5.44.1
+      terser: 5.46.0
 
-  vitest@4.0.17(jsdom@27.4.0)(terser@5.44.1):
+  vitest@4.0.17(jsdom@27.4.0)(terser@5.46.0):
     dependencies:
       '@vitest/expect': 4.0.17
-      '@vitest/mocker': 4.0.17(vite@7.3.1(terser@5.44.1))
+      '@vitest/mocker': 4.0.17(vite@7.3.1(terser@5.46.0))
       '@vitest/pretty-format': 4.0.17
       '@vitest/runner': 4.0.17
       '@vitest/snapshot': 4.0.17
@@ -1314,7 +1314,7 @@ snapshots:
       tinyexec: 1.0.2
       tinyglobby: 0.2.15
       tinyrainbow: 3.0.3
-      vite: 7.3.1(terser@5.44.1)
+      vite: 7.3.1(terser@5.46.0)
       why-is-node-running: 2.3.0
     optionalDependencies:
       jsdom: 27.4.0
