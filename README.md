@@ -40,19 +40,22 @@ Please note that DOMPurify library [doesn't follow Semantic Versioning](https://
 
 ## Usage
 
-Import:
 ```javascript
 import DOMPurify from "isomorphic-dompurify";
-```
-_Importing the entire module for the client/browser version is recommended._
 
-Sanitize:
-```javascript
 const clean = DOMPurify.sanitize(dirtyString);
 ```
-or with [config](https://github.com/cure53/DOMPurify/blob/main/README.md):
+
+You can pass [config](https://github.com/cure53/DOMPurify/blob/main/README.md) as a second argument:
 ```javascript
 const clean = DOMPurify.sanitize(dirtyString, { USE_PROFILES: { html: true } });
+```
+
+Named imports are also supported:
+```javascript
+import { sanitize } from "isomorphic-dompurify";
+
+const clean = sanitize(dirtyString);
 ```
 
 ## Web Worker Support
