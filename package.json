@@ -47,7 +47,7 @@
   },
   "dependencies": {
     "dompurify": "^3.3.1",
-    "jsdom": "^27.4.0"
+    "jsdom": "^28.0.0"
   },
   "devDependencies": {
     "terser": "^5.44.1",
