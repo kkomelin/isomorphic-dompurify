@@ -82,6 +82,10 @@ clearWindow();
 The `isomorphic-dompurify` library is [compatible with Web Workers](https://github.com/kkomelin/isomorphic-dompurify/pull/242), 
 however, `dompurify`, which it depends upon, [is not, at least not yet](https://github.com/cure53/DOMPurify/issues/577).
 
+## Playgrounds
+
+Want to try `isomorphic-dompurify` with your favorite framework? Check out [isomorphic-dompurify-playgrounds](https://github.com/kkomelin/isomorphic-dompurify-playgrounds) — minimal setups for popular frameworks including Astro, Next.js, Nuxt, React and Svelte.
+
 ## License
 
 DOMPurify -
