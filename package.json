@@ -17,32 +17,46 @@
     "sanitizer"
   ],
   "scripts": {
-    "test": "vitest run",
-    "build": "terser src/index.js --compress --mangle --module -o index.js"
+    "build": "tsup",
+    "test": "vitest run"
   },
   "bugs": {
     "url": "https://github.com/kkomelin/isomorphic-dompurify/issues"
   },
   "files": [
-    "index.js",
-    "index.d.ts",
-    "browser.js"
+    "dist"
   ],
   "license": "MIT",
   "repository": "kkomelin/isomorphic-dompurify",
-  "browser": "browser.js",
-  "main": "index.js",
-  "types": "index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "browser": {
+    "./dist/index.js": "./dist/browser.js",
+    "./dist/index.mjs": "./dist/browser.mjs"
+  },
   "exports": {
-    "node": {
-      "types": "./index.d.ts",
-      "import": "./index.js",
-      "require": "./index.js"
-    },
-    "default": {
-      "types": "./index.d.ts",
-      "import": "./browser.js",
-      "require": "./browser.js"
+    ".": {
+      "node": {
+        "import": {
+          "types": "./dist/index.d.mts",
+          "default": "./dist/index.mjs"
+        },
+        "require": {
+          "types": "./dist/index.d.ts",
+          "default": "./dist/index.js"
+        }
+      },
+      "default": {
+        "import": {
+          "types": "./dist/browser.d.mts",
+          "default": "./dist/browser.mjs"
+        },
+        "require": {
+          "types": "./dist/browser.d.ts",
+          "default": "./dist/browser.js"
+        }
+      }
     }
   },
   "dependencies": {
@@ -50,9 +64,13 @@
     "jsdom": "^28.0.0"
   },
   "devDependencies": {
-    "terser": "^5.44.1",
+    "@types/jsdom": "^27.0.0",
+    "@types/trusted-types": "^2.0.7",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3",
     "vitest": "^4.0.16"
   },
+  "packageManager": "pnpm@10.28.2",
   "engines": {
     "node": ">=20.19.5"
   }
