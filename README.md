@@ -59,6 +59,24 @@ import { sanitize } from "isomorphic-dompurify";
 const clean = sanitize(dirtyString);
 ```
 
+## Memory Management (Server)
+
+In long-running Node.js processes, the internal jsdom window accumulates DOM state across sanitization calls, which can cause progressive slowdown and memory growth. Use `clearWindow()` to periodically release these resources:
+
+```javascript
+import { sanitize, clearWindow } from "isomorphic-dompurify";
+
+// Sanitize as usual
+const clean = sanitize(dirtyString);
+
+// Release jsdom resources when appropriate (e.g. after a request, after a batch)
+clearWindow();
+```
+
+`clearWindow()` closes the current jsdom window and creates a fresh one. All import styles (default and named) continue to work after calling it.
+
+> **Note:** Any hooks or config set via `addHook`/`setConfig` will need to be re-applied after calling `clearWindow()`. In the browser build, `clearWindow()` is a no-op.
+
 ## Web Worker Support
 
 The `isomorphic-dompurify` library is [compatible with Web Workers](https://github.com/kkomelin/isomorphic-dompurify/pull/242), 

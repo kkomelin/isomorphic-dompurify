@@ -1,6 +1,6 @@
 {
   "name": "isomorphic-dompurify",
-  "version": "3.0.0-rc.1",
+  "version": "3.0.0-rc.2",
   "description": "Makes it possible to use DOMPurify on server and client in the same way.",
   "keywords": [
     "security",
@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "test": "vitest run"
+    "test": "NODE_OPTIONS='--expose-gc' vitest run"
   },
   "bugs": {
     "url": "https://github.com/kkomelin/isomorphic-dompurify/issues"

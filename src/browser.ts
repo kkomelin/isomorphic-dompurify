@@ -12,3 +12,7 @@ export const clearConfig = DOMPurify.clearConfig.bind(DOMPurify);
 export const isValidAttribute = DOMPurify.isValidAttribute.bind(DOMPurify);
 export const version = DOMPurify.version;
 export const removed = DOMPurify.removed;
+
+export function clearWindow(): void {
+  // No-op in browser — no jsdom window to manage
+}
