@@ -24,7 +24,11 @@ export const setConfig = ((config: any) => purify.setConfig(config)) as DOMPurif
 export const clearConfig = (() => purify.clearConfig()) as DOMPurifyI['clearConfig'];
 export const isValidAttribute = ((tag: any, attr: any, value: any) => purify.isValidAttribute(tag, attr, value)) as DOMPurifyI['isValidAttribute'];
 export const version = DOMPurify.version;
-export const removed = DOMPurify.removed;
+export const removed: DOMPurifyI['removed'] = new Proxy([] as DOMPurifyI['removed'], {
+  get(_, prop) {
+    return Reflect.get(purify.removed, prop);
+  },
+});
 
 export function clearWindow(): void {
   window.close();

@@ -1,5 +1,5 @@
 import { expect, test } from "vitest";
-import { sanitize, clearWindow } from "../src/index";
+import { sanitize, clearWindow, removed } from "../src/index";
 
 const CHUNK = 500;
 const ROUNDS = 5;
@@ -100,4 +100,18 @@ test("sanitize works correctly after clearWindow", () => {
 
   expect(before).toBe("<div><b>safe</b></div>");
   expect(after).toBe(before);
+});
+
+test("removed named export reflects new instance after clearWindow", () => {
+  sanitize('<img src="x" onerror="alert(1)">');
+  expect(removed.length).toBeGreaterThan(0);
+
+  clearWindow();
+
+  // After clearing, removed should be empty (fresh instance, no sanitize calls yet)
+  expect(removed.length).toBe(0);
+
+  // After sanitizing on the new instance, removed should update
+  sanitize('<img src="x" onerror="alert(1)">');
+  expect(removed.length).toBeGreaterThan(0);
 });
