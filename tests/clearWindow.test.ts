@@ -87,8 +87,10 @@ test("clearWindow resets heap growth and prevents time degradation", { timeout: 
   // With clearing, per-call time should stay roughly stable (<1.5x)
   expect(withClearTimeRatio).toBeLessThan(1.5);
 
-  // With clearing, heap growth should be significantly less
-  expect(withClearHeapGrowth).toBeLessThan(noClearHeapGrowth);
+  // With clearing, heap growth should be significantly less (only reliable with --expose-gc)
+  if (global.gc) {
+    expect(withClearHeapGrowth).toBeLessThan(noClearHeapGrowth);
+  }
 });
 
 test("sanitize works correctly after clearWindow", () => {

@@ -18,7 +18,7 @@
   ],
   "scripts": {
     "build": "tsup",
-    "test": "vitest run"
+    "test": "NODE_OPTIONS='--expose-gc' vitest run"
   },
   "bugs": {
     "url": "https://github.com/kkomelin/isomorphic-dompurify/issues"
