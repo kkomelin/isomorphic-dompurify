@@ -1,4 +1,4 @@
-name: Build and Test
+name: Lint, Build and Test
 
 on:
   push:
@@ -24,5 +24,7 @@ jobs:
           node-version: ${{ matrix.node-version }}
           cache: 'pnpm'
       - run: pnpm install --frozen-lockfile
+      - run: pnpm lint
+      - run: pnpm typecheck
       - run: pnpm build
       - run: pnpm test

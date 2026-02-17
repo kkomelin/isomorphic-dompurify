@@ -1,4 +1,5 @@
 onlyBuiltDependencies:
   - esbuild
+  - lefthook
 packages:
   - '.'

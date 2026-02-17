@@ -1,0 +1,9 @@
+pre-commit:
+  parallel: true
+  jobs:
+    - name: lint
+      glob: "*.{js,ts,mjs,mts}"
+      run: pnpm biome check --no-errors-on-unmatched {staged_files}
+
+    - name: typecheck
+      run: pnpm typecheck
