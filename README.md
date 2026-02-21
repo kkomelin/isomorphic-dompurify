@@ -86,6 +86,10 @@ however, `dompurify`, which it depends upon, [is not, at least not yet](https://
 
 Want to try `isomorphic-dompurify` with your favorite framework? Check out [isomorphic-dompurify-playgrounds](https://github.com/kkomelin/isomorphic-dompurify-playgrounds) — minimal setups for popular frameworks including Astro, Next.js, Nuxt, React and Svelte.
 
+## Known Issues
+
+- **ERR_REQUIRE_ESM in CommonJS environments (v3.0.0+):** `jsdom@28` pulls in an ESM-only dependency that breaks `require()` in environments like Next.js on Vercel. Workaround: pin `jsdom` to `25.0.1` via package manager overrides. See [#394](https://github.com/kkomelin/isomorphic-dompurify/issues/394).
+
 ## License
 
 DOMPurify -
