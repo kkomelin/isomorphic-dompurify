@@ -68,7 +68,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.2",
-    "@types/jsdom": "^27.0.0",
+    "@types/jsdom": "^28.0.0",
     "@types/trusted-types": "^2.0.7",
     "lefthook": "^2.1.1",
     "tsup": "^8.5.1",
