@@ -84,7 +84,7 @@ however, `dompurify`, which it depends upon, [is not, at least not yet](https://
 
 ## Playgrounds
 
-Want to try `isomorphic-dompurify` with your favorite framework? Check out [isomorphic-dompurify-playgrounds](https://github.com/kkomelin/isomorphic-dompurify-playgrounds) — minimal setups for popular frameworks including Astro, Next.js, Nuxt, React and Svelte.
+Want to try `isomorphic-dompurify` with your favorite framework? Check out [isomorphic-dompurify-playgrounds](https://github.com/kkomelin/isomorphic-dompurify-playgrounds) — minimal setups for popular frameworks including Astro, Next.js, Nuxt, React, Svelte, and others.
 
 ## Known Issues
 
