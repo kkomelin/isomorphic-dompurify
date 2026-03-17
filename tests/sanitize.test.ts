@@ -40,3 +40,21 @@ test('sanitize with RETURN_DOM returns a node comparable via isEqualNode with a 
   // Should not throw even though the two nodes come from different JSDOM instances
   expect(() => cleanBody.isEqualNode(dirtyBody)).not.toThrow()
 })
+
+// Test for https://github.com/kkomelin/isomorphic-dompurify/issues/405
+// Verifies that RETURN_DOM + FORCE_BODY returns a node that isEqualNode correctly
+// compares against a body node created in a separate JSDOM context.
+// Regression based on https://github.com/kkomelin/isomorphic-dompurify/issues/405#issuecomment-4076465555
+test('sanitize with RETURN_DOM and FORCE_BODY returns node equal to dirty body from a separate JSDOM context', () => {
+  const html = '<p>Text</p>'
+
+  // Simulate a separate DOM context (e.g. a user's own JSDOM or test environment)
+  const { window: domWindow } = new JSDOM()
+  const dirtyBody = domWindow.document.createElement('body')
+  dirtyBody.innerHTML = html
+
+  const cleanBody = sanitize(html, { FORCE_BODY: true, RETURN_DOM: true }) as Element
+
+  expect('tagName' in cleanBody).toBe(true)
+  expect(cleanBody.isEqualNode(dirtyBody)).toBe(true)
+})
