@@ -18,6 +18,7 @@
   ],
   "scripts": {
     "build": "tsup",
+    "format": "biome format --write",
     "lint": "biome check",
     "lint:fix": "biome check --fix",
     "typecheck": "tsc --noEmit",
@@ -77,6 +78,6 @@
   },
   "packageManager": "pnpm@10.32.1",
   "engines": {
-    "node": "^20.19.0 || ^22.12.0 || >=24.0.0"
+    "node": "^20.19.0 || ^22.13.0 || >=24.0.0"
   }
 }

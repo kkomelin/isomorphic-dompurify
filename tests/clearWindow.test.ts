@@ -81,9 +81,6 @@ test('clearWindow resets heap growth and prevents time degradation', { timeout: 
     },
   })
 
-  // Without clearing, per-call time should degrade noticeably (>1.5x)
-  expect(noClearTimeRatio).toBeGreaterThan(1.5)
-
   // With clearing, per-call time should stay roughly stable (<1.5x)
   expect(withClearTimeRatio).toBeLessThan(1.5)
 

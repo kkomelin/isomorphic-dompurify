@@ -28,6 +28,7 @@ It was inspired by [Isomorphic Unfetch](https://github.com/developit/unfetch/tre
 | `>=2.27.0`  | `>=20`  | Server  |
 | `>=2.30.0`  | `>=20.19.5`  | Server  |
 | `>=3.0.0`  | `^20.19.0 \|\| ^22.12.0 \|\| >=24.0.0`  | Server  |
+| `>=3.4.0`  | `^20.19.0 \|\| ^22.13.0 \|\| >=24.0.0`  | Server  |
 
 ## Installation
 
