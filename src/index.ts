@@ -5,13 +5,20 @@ import { JSDOM } from 'jsdom'
 let window = new JSDOM('<!DOCTYPE html>').window
 let purify: DOMPurifyI = DOMPurifyFactory(window as unknown as Parameters<typeof DOMPurifyFactory>[0])
 
-// Proxy so `DOMPurify.method()` always delegates to the current instance
-const DOMPurify: DOMPurifyI = new Proxy({} as DOMPurifyI, {
-  get(_, prop) {
-    const value = (purify as any)[prop]
-    return typeof value === 'function' ? value.bind(purify) : value
+// Proxy so `DOMPurify.method()` always delegates to the current instance,
+// and `DOMPurify(root)` works as a factory matching the dompurify API.
+const DOMPurify: DOMPurifyI = new Proxy(
+  ((root?: Parameters<typeof DOMPurifyFactory>[0]) => DOMPurifyFactory(root)) as unknown as DOMPurifyI,
+  {
+    get(_, prop) {
+      const value = (purify as any)[prop]
+      return typeof value === 'function' ? value.bind(purify) : value
+    },
+    apply(_, __, [root]: Parameters<typeof DOMPurifyFactory>) {
+      return DOMPurifyFactory(root)
+    },
   },
-})
+)
 
 export default DOMPurify
 export const sanitize = ((dirty: any, config?: any) => purify.sanitize(dirty, config)) as DOMPurifyI['sanitize']
