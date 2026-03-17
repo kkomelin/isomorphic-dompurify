@@ -22,7 +22,8 @@
     "lint": "biome check",
     "lint:fix": "biome check --fix",
     "typecheck": "tsc --noEmit",
-    "test": "NODE_OPTIONS='--expose-gc' vitest run"
+    "test": "NODE_OPTIONS='--expose-gc' vitest run",
+    "prepublishOnly": "pnpm build"
   },
   "bugs": {
     "url": "https://github.com/kkomelin/isomorphic-dompurify/issues"
