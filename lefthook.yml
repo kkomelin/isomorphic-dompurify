@@ -2,7 +2,8 @@ pre-commit:
   parallel: true
   jobs:
     - name: format
-      run: pnpm format
+      glob: "*.{js,ts,mjs,mts}"
+      run: pnpm biome format --write --no-errors-on-unmatched {staged_files}
 
     - name: lint
       glob: "*.{js,ts,mjs,mts}"
