@@ -1,3 +1,4 @@
+import { JSDOM } from 'jsdom'
 import { expect, test } from 'vitest'
 import DOMPurify, { isSupported, sanitize, version } from '../src/index'
 
@@ -21,4 +22,21 @@ test('sanitize passes config through to DOMPurify', () => {
 test('isSupported is true and version is defined', () => {
   expect(isSupported).toBe(true)
   expect(version).toMatch(/^\d+\.\d+\.\d+$/)
+})
+
+// Test for https://github.com/kkomelin/isomorphic-dompurify/issues/405
+// Verifies that RETURN_DOM nodes can be compared with isEqualNode against nodes
+// from a separate JSDOM context (e.g. a test framework's own JSDOM environment).
+test('sanitize with RETURN_DOM returns a node comparable via isEqualNode with a node from a separate JSDOM context', () => {
+  const html = '<b>hello</b>'
+
+  // Simulate a user's separate DOM context (e.g. a test environment's JSDOM)
+  const { window: userWindow } = new JSDOM('<!DOCTYPE html>')
+  const dirtyBody = userWindow.document.createElement('body')
+  dirtyBody.innerHTML = html
+
+  const cleanBody = sanitize(html, { RETURN_DOM: true }) as Element
+
+  // Should not throw even though the two nodes come from different JSDOM instances
+  expect(() => cleanBody.isEqualNode(dirtyBody)).not.toThrow()
 })
