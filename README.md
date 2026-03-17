@@ -60,6 +60,15 @@ import { sanitize } from "isomorphic-dompurify";
 const clean = sanitize(dirtyString);
 ```
 
+The default export is also callable as a factory, matching the `dompurify` API. This is useful when you need a DOMPurify instance bound to a specific window (e.g. in tests or sandboxed environments):
+```javascript
+import DOMPurify from "isomorphic-dompurify";
+import { JSDOM } from "jsdom";
+
+const purify = DOMPurify(new JSDOM().window);
+const clean = purify.sanitize(dirtyString);
+```
+
 ## Memory Management (Server)
 
 In long-running Node.js processes, the internal jsdom window accumulates DOM state across sanitization calls, which can cause progressive slowdown and memory growth. Use `clearWindow()` to periodically release these resources:
