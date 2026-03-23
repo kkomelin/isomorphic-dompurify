@@ -74,7 +74,7 @@
     "@types/trusted-types": "^2.0.7",
     "lefthook": "^2.1.4",
     "tsup": "^8.5.1",
-    "typescript": "^5.9.3",
+    "typescript": "^6.0.2",
     "vitest": "^4.1.0"
   },
   "packageManager": "pnpm@10.32.1",
