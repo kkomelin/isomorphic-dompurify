@@ -1,7 +1,7 @@
 import DOMPurify from 'dompurify'
 
 export default DOMPurify
-export const sanitize = DOMPurify.sanitize.bind(DOMPurify)
+export const sanitize: typeof DOMPurify.sanitize = DOMPurify.sanitize.bind(DOMPurify)
 export const isSupported = DOMPurify.isSupported
 export const addHook = DOMPurify.addHook.bind(DOMPurify)
 export const removeHook = DOMPurify.removeHook.bind(DOMPurify)
