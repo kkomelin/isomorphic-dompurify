@@ -7,7 +7,6 @@ export default defineConfig([
     dts: true,
     outDir: 'dist',
     external: ['dompurify', 'jsdom'],
-    clean: true,
   },
   {
     entry: { browser: 'src/browser.ts' },
@@ -15,6 +14,5 @@ export default defineConfig([
     dts: true,
     outDir: 'dist',
     external: ['dompurify'],
-    clean: false,
   },
 ])
