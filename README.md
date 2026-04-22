@@ -1,5 +1,6 @@
 # Isomorphic DOMPurify
 [![npm version](https://img.shields.io/npm/v/isomorphic-dompurify.svg)](https://www.npmjs.com/package/isomorphic-dompurify)
+[![npm downloads](https://img.shields.io/npm/dw/isomorphic-dompurify)](https://www.npmjs.com/package/isomorphic-dompurify)
 [![Test Status](https://github.com/kkomelin/isomorphic-dompurify/actions/workflows/build_test.yml/badge.svg)](https://github.com/kkomelin/isomorphic-dompurify/actions/workflows/build_test.yml)
 
 The library makes it possible to seamlessly use [DOMPurify](https://github.com/cure53/DOMPurify) on both server and client in the same way.
