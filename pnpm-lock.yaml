@@ -13,7 +13,7 @@ importers:
         version: 3.4.1
       jsdom:
         specifier: ^29.0.2
-        version: 29.0.2
+        version: 29.1.0
     devDependencies:
       '@biomejs/biome':
         specifier: ^2.4.12
@@ -32,13 +32,13 @@ importers:
         version: 6.1.3
       tsup:
         specifier: ^8.5.1
-        version: 8.5.1(postcss@8.5.10)(typescript@6.0.3)
+        version: 8.5.1(postcss@8.5.12)(typescript@6.0.3)
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
       vitest:
         specifier: ^4.1.5
-        version: 4.1.5(@types/node@25.6.0)(jsdom@29.0.2)(vite@7.3.1(@types/node@25.6.0)(terser@5.46.0))
+        version: 4.1.5(@types/node@25.6.0)(jsdom@29.1.0)(vite@7.3.1(@types/node@25.6.0)(terser@5.46.0))
 
 packages:
 
@@ -665,8 +665,8 @@ packages:
     resolution: {integrity: sha512-34wB/Y7MW7bzjKRjUKTa46I2Z7eV62Rkhva+KkopW7Qvv/OSWBqvkSY7vusOPrNuZcUG3tApvdVgNB8POj3SPw==}
     engines: {node: '>=10'}
 
-  jsdom@29.0.2:
-    resolution: {integrity: sha512-9VnGEBosc/ZpwyOsJBCQ/3I5p7Q5ngOY14a9bf5btenAORmZfDse1ZEheMiWcJ3h81+Fv7HmJFdS0szo/waF2w==}
+  jsdom@29.1.0:
+    resolution: {integrity: sha512-YNUc7fB9QuvSSQWfrH0xF+TyABkxUwx8sswgIDaCrw4Hol8BghdZDkITtZheRJeMtzWlnTfsM3bBBusRvpO1wg==}
     engines: {node: ^20.19.0 || ^22.13.0 || >=24.0.0}
     peerDependencies:
       canvas: ^3.0.0
@@ -826,8 +826,8 @@ packages:
       yaml:
         optional: true
 
-  postcss@8.5.10:
-    resolution: {integrity: sha512-pMMHxBOZKFU6HgAZ4eyGnwXF/EvPGGqUr0MnZ5+99485wwW41kW91A4LOGxSHhgugZmSChL5AlElNdwlNgcnLQ==}
+  postcss@8.5.12:
+    resolution: {integrity: sha512-W62t/Se6rA0Az3DfCL0AqJwXuKwBeYg6nOaIgzP+xZ7N5BFCI7DYi1qs6ygUYT6rvfi6t9k65UMLJC+PHZpDAA==}
     engines: {node: ^10 || ^12 || >=14}
 
   punycode@2.3.1:
@@ -1552,7 +1552,7 @@ snapshots:
 
   joycon@3.1.1: {}
 
-  jsdom@29.0.2:
+  jsdom@29.1.0:
     dependencies:
       '@asamuzakjp/css-color': 5.1.11
       '@asamuzakjp/dom-selector': 7.1.1
@@ -1691,13 +1691,13 @@ snapshots:
       mlly: 1.8.2
       pathe: 2.0.3
 
-  postcss-load-config@6.0.1(postcss@8.5.10):
+  postcss-load-config@6.0.1(postcss@8.5.12):
     dependencies:
       lilconfig: 3.1.3
     optionalDependencies:
-      postcss: 8.5.10
+      postcss: 8.5.12
 
-  postcss@8.5.10:
+  postcss@8.5.12:
     dependencies:
       nanoid: 3.3.11
       picocolors: 1.1.1
@@ -1829,7 +1829,7 @@ snapshots:
 
   ts-interface-checker@0.1.13: {}
 
-  tsup@8.5.1(postcss@8.5.10)(typescript@6.0.3):
+  tsup@8.5.1(postcss@8.5.12)(typescript@6.0.3):
     dependencies:
       bundle-require: 5.1.0(esbuild@0.27.7)
       cac: 6.7.14
@@ -1840,7 +1840,7 @@ snapshots:
       fix-dts-default-cjs-exports: 1.0.1
       joycon: 3.1.1
       picocolors: 1.1.1
-      postcss-load-config: 6.0.1(postcss@8.5.10)
+      postcss-load-config: 6.0.1(postcss@8.5.12)
       resolve-from: 5.0.0
       rollup: 4.60.2
       source-map: 0.7.6
@@ -1849,7 +1849,7 @@ snapshots:
       tinyglobby: 0.2.16
       tree-kill: 1.2.2
     optionalDependencies:
-      postcss: 8.5.10
+      postcss: 8.5.12
       typescript: 6.0.3
     transitivePeerDependencies:
       - jiti
@@ -1872,7 +1872,7 @@ snapshots:
       esbuild: 0.27.7
       fdir: 6.5.0(picomatch@4.0.4)
       picomatch: 4.0.4
-      postcss: 8.5.10
+      postcss: 8.5.12
       rollup: 4.60.2
       tinyglobby: 0.2.16
     optionalDependencies:
@@ -1880,7 +1880,7 @@ snapshots:
       fsevents: 2.3.3
       terser: 5.46.0
 
-  vitest@4.1.5(@types/node@25.6.0)(jsdom@29.0.2)(vite@7.3.1(@types/node@25.6.0)(terser@5.46.0)):
+  vitest@4.1.5(@types/node@25.6.0)(jsdom@29.1.0)(vite@7.3.1(@types/node@25.6.0)(terser@5.46.0)):
     dependencies:
       '@vitest/expect': 4.1.5
       '@vitest/mocker': 4.1.5(vite@7.3.1(@types/node@25.6.0)(terser@5.46.0))
@@ -1904,7 +1904,7 @@ snapshots:
       why-is-node-running: 2.3.0
     optionalDependencies:
       '@types/node': 25.6.0
-      jsdom: 29.0.2
+      jsdom: 29.1.0
     transitivePeerDependencies:
       - msw
 
