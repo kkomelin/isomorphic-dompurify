@@ -44,3 +44,19 @@ export function clearWindow(): void {
   window = new JSDOM('<!DOCTYPE html>').window
   purify = DOMPurifyFactory(window as unknown as Parameters<typeof DOMPurifyFactory>[0])
 }
+
+export type {
+  Config,
+  DOMPurify,
+  DocumentFragmentHook,
+  ElementHook,
+  HookName,
+  NodeHook,
+  RemovedAttribute,
+  RemovedElement,
+  UponSanitizeAttributeHook,
+  UponSanitizeAttributeHookEvent,
+  UponSanitizeElementHook,
+  UponSanitizeElementHookEvent,
+  WindowLike,
+} from 'dompurify'

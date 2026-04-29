@@ -70,6 +70,22 @@ const purify = DOMPurify(new JSDOM().window);
 const clean = purify.sanitize(dirtyString);
 ```
 
+## TypeScript
+
+The hook-related types from `dompurify` are re-exported, so you can type your `addHook` callbacks without redeclaring the signatures:
+
+```typescript
+import { addHook, type NodeHook } from "isomorphic-dompurify";
+
+const stripTargetBlank: NodeHook = function (node) {
+  if ("target" in node) (node as Element).removeAttribute("target");
+};
+
+addHook("afterSanitizeAttributes", stripTargetBlank);
+```
+
+Available type re-exports: `Config`, `DOMPurify`, `DocumentFragmentHook`, `ElementHook`, `HookName`, `NodeHook`, `RemovedAttribute`, `RemovedElement`, `UponSanitizeAttributeHook`, `UponSanitizeAttributeHookEvent`, `UponSanitizeElementHook`, `UponSanitizeElementHookEvent`, `WindowLike`.
+
 ## Memory Management (Server)
 
 In long-running Node.js processes, the internal jsdom window accumulates DOM state across sanitization calls, which can cause progressive slowdown and memory growth. Use `clearWindow()` to periodically release these resources:
