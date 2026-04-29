@@ -16,3 +16,19 @@ export const removed = DOMPurify.removed
 export function clearWindow(): void {
   // No-op in browser — no jsdom window to manage
 }
+
+export type {
+  Config,
+  DOMPurify,
+  DocumentFragmentHook,
+  ElementHook,
+  HookName,
+  NodeHook,
+  RemovedAttribute,
+  RemovedElement,
+  UponSanitizeAttributeHook,
+  UponSanitizeAttributeHookEvent,
+  UponSanitizeElementHook,
+  UponSanitizeElementHookEvent,
+  WindowLike,
+} from 'dompurify'
