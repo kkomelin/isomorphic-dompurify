@@ -9,14 +9,14 @@ importers:
   .:
     dependencies:
       dompurify:
-        specifier: ^3.4.1
+        specifier: ^3.4.2
         version: 3.4.2
       jsdom:
-        specifier: ^29.1.0
+        specifier: ^29.1.1
         version: 29.1.1
     devDependencies:
       '@biomejs/biome':
-        specifier: ^2.4.13
+        specifier: ^2.4.14
         version: 2.4.14
       '@types/jsdom':
         specifier: ^28.0.1
