@@ -25,6 +25,7 @@
     "test": "NODE_OPTIONS='--expose-gc' vitest run",
     "prepublishOnly": "pnpm build"
   },
+  "homepage": "https://github.com/kkomelin/isomorphic-dompurify",
   "bugs": {
     "url": "https://github.com/kkomelin/isomorphic-dompurify/issues"
   },
