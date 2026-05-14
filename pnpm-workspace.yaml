@@ -1,6 +1,6 @@
 allowBuilds:
-  esbuild: set this to true or false
-  lefthook: set this to true or false
+  esbuild: true
+  lefthook: false
 onlyBuiltDependencies:
   - esbuild
   - lefthook
