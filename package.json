@@ -79,7 +79,7 @@
     "typescript": "^7.0.2",
     "vitest": "^4.1.9"
   },
-  "packageManager": "pnpm@11.6.0",
+  "packageManager": "pnpm@11.11.0",
   "engines": {
     "node": "^20.19.0 || ^22.13.0 || >=24.0.0"
   }
