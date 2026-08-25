@@ -19,8 +19,8 @@ importers:
         specifier: ^2.5.4
         version: 2.5.10
       '@types/jsdom':
-        specifier: ^28.0.3
-        version: 28.0.3
+        specifier: ^30.0.0
+        version: 30.0.0
       '@types/trusted-types':
         specifier: ^2.0.7
         version: 2.0.7
@@ -38,7 +38,7 @@ importers:
         version: 6.0.3
       vitest:
         specifier: ^4.1.10
-        version: 4.1.10(@types/node@26.1.1)(jsdom@30.0.1)(vite@8.0.13(@types/node@26.1.1)(esbuild@0.27.7))
+        version: 4.1.10(@types/node@26.2.0)(jsdom@30.0.1)(vite@8.0.13(@types/node@26.2.0)(esbuild@0.27.7))
 
 packages:
 
@@ -594,11 +594,11 @@ packages:
   '@types/estree@1.0.9':
     resolution: {integrity: sha512-GhdPgy1el4/ImP05X05Uw4cw2/M93BCUmnEvWZNStlCzEKME4Fkk+YpoA5OiHNQmoS7Cafb8Xa3Pya8m1Qrzeg==}
 
-  '@types/jsdom@28.0.3':
-    resolution: {integrity: sha512-/HQ2uFoetFTXuye8vzIcHw2z6Fwi7Hi/qcgC+RoS9NCyewiqxhVGqlG+ViGB6lkax481R6dmhf1I7lIGlzJStQ==}
+  '@types/jsdom@30.0.0':
+    resolution: {integrity: sha512-uAHGxujGE0cDaKGdK28zgDotFtNA7MKq5DXl8LrfdxdCI8VHcg15oJz+amHTChPNI5JpgEPQWc2xFdrw3em/nQ==}
 
-  '@types/node@26.1.1':
-    resolution: {integrity: sha512-nxAkRSVkN1Y0JC1W8ky/fTfkGsMmcrRsbx+3XoZE+rMOX71kLYTV7fLXpqud1GpbpP5TuffXFqfX7fH2GgZREw==}
+  '@types/node@26.2.0':
+    resolution: {integrity: sha512-5IviulTZeRNp2vAJ514cc/HUlY5nZ9fCbq9DMyC52BrhFZACo3nI0R7qBxhQmo/d27NFe96ur/b7Wwxklda+kg==}
 
   '@types/tough-cookie@4.0.5':
     resolution: {integrity: sha512-/Ad8+nIOV7Rl++6f1BdKxFSMgmoqEoYbHRpPcx3JEfv8VRsQe9Z4mCXeJBzxs7mbHY/XOZZuXlRNfhpVPbs6ZA==}
@@ -1142,8 +1142,8 @@ packages:
   ufo@1.6.4:
     resolution: {integrity: sha512-JFNbkD1Svwe0KvGi8GOeLcP4kAWQ609twvCdcHxq1oSL8svv39ZuSvajcD8B+5D0eL4+s1Is2D/O6KN3qcTeRA==}
 
-  undici-types@7.28.0:
-    resolution: {integrity: sha512-LJAfY+2w6HGeT8d8J1wNQsUGUEGio6NWWpwdwurQe4f6oojzCFuGLizl1KSve4irsTxyLly1QhEeE6iapdaIvQ==}
+  undici-types@8.10.0:
+    resolution: {integrity: sha512-ibvdovq3nCFs8Msrd95BW+zUOq+aOVbT+wpHUoPWhztbHEoPc6oof51iFDB6Es8lTKvNvVW9jNSAB8dwrKTMGg==}
 
   undici-types@8.3.0:
     resolution: {integrity: sha512-j375ScV60dom+YkPFIfTLcOiPxkN/buHz5GobjLhixFuANaNs3C9l4GmrWqejgXWJ7BbJcFYpTEUkS1Ge8bpZQ==}
@@ -1609,14 +1609,14 @@ snapshots:
 
   '@types/estree@1.0.9': {}
 
-  '@types/jsdom@28.0.3':
+  '@types/jsdom@30.0.0':
     dependencies:
-      '@types/node': 26.1.1
+      '@types/node': 26.2.0
       '@types/tough-cookie': 4.0.5
       parse5: 8.0.1
-      undici-types: 7.28.0
+      undici-types: 8.10.0
 
-  '@types/node@26.1.1':
+  '@types/node@26.2.0':
     dependencies:
       undici-types: 8.3.0
 
@@ -1633,13 +1633,13 @@ snapshots:
       chai: 6.2.2
       tinyrainbow: 3.1.0
 
-  '@vitest/mocker@4.1.10(vite@8.0.13(@types/node@26.1.1)(esbuild@0.27.7))':
+  '@vitest/mocker@4.1.10(vite@8.0.13(@types/node@26.2.0)(esbuild@0.27.7))':
     dependencies:
       '@vitest/spy': 4.1.10
       estree-walker: 3.0.3
       magic-string: 0.30.21
     optionalDependencies:
-      vite: 8.0.13(@types/node@26.1.1)(esbuild@0.27.7)
+      vite: 8.0.13(@types/node@26.2.0)(esbuild@0.27.7)
 
   '@vitest/pretty-format@4.1.10':
     dependencies:
@@ -2155,13 +2155,13 @@ snapshots:
 
   ufo@1.6.4: {}
 
-  undici-types@7.28.0: {}
+  undici-types@8.10.0: {}
 
   undici-types@8.3.0: {}
 
   undici@8.9.0: {}
 
-  vite@8.0.13(@types/node@26.1.1)(esbuild@0.27.7):
+  vite@8.0.13(@types/node@26.2.0)(esbuild@0.27.7):
     dependencies:
       lightningcss: 1.32.0
       picomatch: 4.0.5
@@ -2169,14 +2169,14 @@ snapshots:
       rolldown: 1.0.1
       tinyglobby: 0.2.17
     optionalDependencies:
-      '@types/node': 26.1.1
+      '@types/node': 26.2.0
       esbuild: 0.27.7
       fsevents: 2.3.3
 
-  vitest@4.1.10(@types/node@26.1.1)(jsdom@30.0.1)(vite@8.0.13(@types/node@26.1.1)(esbuild@0.27.7)):
+  vitest@4.1.10(@types/node@26.2.0)(jsdom@30.0.1)(vite@8.0.13(@types/node@26.2.0)(esbuild@0.27.7)):
     dependencies:
       '@vitest/expect': 4.1.10
-      '@vitest/mocker': 4.1.10(vite@8.0.13(@types/node@26.1.1)(esbuild@0.27.7))
+      '@vitest/mocker': 4.1.10(vite@8.0.13(@types/node@26.2.0)(esbuild@0.27.7))
       '@vitest/pretty-format': 4.1.10
       '@vitest/runner': 4.1.10
       '@vitest/snapshot': 4.1.10
@@ -2193,10 +2193,10 @@ snapshots:
       tinyexec: 1.2.4
       tinyglobby: 0.2.17
       tinyrainbow: 3.1.0
-      vite: 8.0.13(@types/node@26.1.1)(esbuild@0.27.7)
+      vite: 8.0.13(@types/node@26.2.0)(esbuild@0.27.7)
       why-is-node-running: 2.3.0
     optionalDependencies:
-      '@types/node': 26.1.1
+      '@types/node': 26.2.0
       jsdom: 30.0.1
     transitivePeerDependencies:
       - msw
