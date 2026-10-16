@@ -67,7 +67,7 @@
   },
   "dependencies": {
     "dompurify": "^3.4.17",
-    "jsdom": "^30.1.2"
+    "jsdom": "^30.1.3"
   },
   "devDependencies": {
     "@biomejs/biome": "^2.5.15",
