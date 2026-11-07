@@ -7,7 +7,7 @@ Name release tags without a `v` prefix: `4.6.0`, not `v4.6.0`. The same applies 
 ## How we release
 
 1. Run `pnpm outdated` and fold any pending runtime dependency updates (`dompurify`, `jsdom`) into the release.
-2. Pick the version. Any `dompurify` bump, even a DOMPurify patch, ships as a minor release (e.g. `4.5.0` -> `4.6.0`) because DOMPurify doesn't follow semver and its patches can change behavior.
+2. Pick the version. Any `dompurify` bump, even a DOMPurify patch, ships as a minor release (e.g. `4.5.0` -> `4.6.0`) because DOMPurify doesn't follow semver and its patches can change behavior. Minor `jsdom` bump can also cause a minor release.
 3. Commit `chore(deps): align package.json version floors with lockfile`: raise the caret ranges in `package.json` to the installed versions.
 4. Commit `chore: release X.Y.Z`: this commit changes only `version` in `package.json`.
 5. Create a lightweight tag on the release commit: `git tag X.Y.Z`.
