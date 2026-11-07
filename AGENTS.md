@@ -13,5 +13,5 @@ Name release tags without a `v` prefix: `4.6.0`, not `v4.6.0`. The same applies 
 5. Commit `chore: release X.Y.Z`: this commit changes only `version` in `package.json`.
 6. Create a lightweight tag on the release commit: `git tag X.Y.Z`.
 7. Push `master` and the tag: `git push && git push origin X.Y.Z`.
-8. Create a GitHub release from the tag, titled `X.Y.Z: <short summary>` (e.g. `4.6.0: Updated dependencies`), with a bullet list of changes such as `jsdom 30.1.2 -> 30.1.3`.
+8. Create a GitHub release from the tag, titled `X.Y.Z: <short summary>` (e.g. `4.6.0: Updated dependencies`), with a bullet list of every change since the previous tag, including dev tooling and `packageManager`, in the same format as the previous release (e.g. `jsdom 30.1.2 -> 30.1.3`).
 9. Ask the user to run `pnpm login` (npm asks for it every time), then `pnpm publish` manually. Don't run them yourself. `prepublishOnly` rebuilds `dist` before publishing.
