@@ -176,14 +176,14 @@ importers:
   .:
     dependencies:
       dompurify:
-        specifier: ^3.4.17
+        specifier: ^3.4.18
         version: 3.4.18
       jsdom:
-        specifier: ^31.0.0
+        specifier: ^31.0.1
         version: 31.0.1
     devDependencies:
       '@biomejs/biome':
-        specifier: ^2.6.5
+        specifier: ^2.6.8
         version: 2.6.8
       '@types/jsdom':
         specifier: ^30.0.0
